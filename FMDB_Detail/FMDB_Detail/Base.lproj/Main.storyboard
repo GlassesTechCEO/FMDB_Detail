@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pY3-oA-86u">
+                                <rect key="frame" x="137" y="50" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="QPF-Ze-pch"/>
+                                    <constraint firstAttribute="height" constant="30" id="fYr-xR-FsU"/>
+                                </constraints>
+                                <state key="normal" title="新建数据库"/>
+                                <connections>
+                                    <action selector="createSQLiteMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W7W-UH-wYd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fr1-9L-BPS">
+                                <rect key="frame" x="137" y="170" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BMo-me-hj5"/>
+                                    <constraint firstAttribute="width" constant="100" id="XR8-Yi-o3x"/>
+                                </constraints>
+                                <state key="normal" title="添加数据"/>
+                                <connections>
+                                    <action selector="addDataMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zc5-m1-ZQm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggD-yC-gH2">
+                                <rect key="frame" x="137" y="110" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Zcr-At-QsS"/>
+                                    <constraint firstAttribute="height" constant="30" id="wgd-QE-2QC"/>
+                                </constraints>
+                                <state key="normal" title="新建表"/>
+                                <connections>
+                                    <action selector="createTableMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ROX-d2-QcW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fP5-gm-4t3">
+                                <rect key="frame" x="137" y="230" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="A4d-6z-aVC"/>
+                                    <constraint firstAttribute="height" constant="30" id="MOd-25-xUL"/>
+                                </constraints>
+                                <state key="normal" title="删除数据"/>
+                                <connections>
+                                    <action selector="deleteDataMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VKS-IQ-VVt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1V-nm-7pd">
+                                <rect key="frame" x="137" y="350" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AMv-Xq-zW3"/>
+                                    <constraint firstAttribute="height" constant="30" id="ojL-Xq-Sdg"/>
+                                </constraints>
+                                <state key="normal" title="查询数据"/>
+                                <connections>
+                                    <action selector="searchDataMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="21j-F9-v4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPe-W4-bVt">
+                                <rect key="frame" x="138" y="410" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Z0y-OR-tuk"/>
+                                    <constraint firstAttribute="height" constant="30" id="dNJ-uw-oFp"/>
+                                </constraints>
+                                <state key="normal" title="删除表"/>
+                                <connections>
+                                    <action selector="deleteTableMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S5K-o1-4Nn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j4c-0p-d3C">
+                                <rect key="frame" x="137" y="290" width="100" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="EvL-xX-pyf"/>
+                                    <constraint firstAttribute="height" constant="30" id="QCm-Ed-5Lt"/>
+                                </constraints>
+                                <state key="normal" title="修改数据"/>
+                                <connections>
+                                    <action selector="changeDataMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ohQ-0W-vZB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j4c-0p-d3C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EM0-9Z-leT"/>
+                            <constraint firstItem="pY3-oA-86u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K5s-TK-ioD"/>
+                            <constraint firstItem="pY3-oA-86u" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="KCX-d4-kVw"/>
+                            <constraint firstItem="j4c-0p-d3C" firstAttribute="top" secondItem="fP5-gm-4t3" secondAttribute="bottom" constant="30" id="KCw-dS-amn"/>
+                            <constraint firstItem="fr1-9L-BPS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NbI-5g-5RE"/>
+                            <constraint firstItem="BPe-W4-bVt" firstAttribute="top" secondItem="x1V-nm-7pd" secondAttribute="bottom" constant="30" id="P8b-5D-61N"/>
+                            <constraint firstItem="ggD-yC-gH2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ShM-e2-aIX"/>
+                            <constraint firstItem="x1V-nm-7pd" firstAttribute="top" secondItem="j4c-0p-d3C" secondAttribute="bottom" constant="30" id="UDv-iQ-i97"/>
+                            <constraint firstItem="fP5-gm-4t3" firstAttribute="top" secondItem="fr1-9L-BPS" secondAttribute="bottom" constant="30" id="XPR-Bc-a2i"/>
+                            <constraint firstItem="ggD-yC-gH2" firstAttribute="top" secondItem="pY3-oA-86u" secondAttribute="bottom" constant="30" id="eUM-sR-Ocf"/>
+                            <constraint firstItem="x1V-nm-7pd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lPg-Nk-a5t"/>
+                            <constraint firstItem="BPe-W4-bVt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mAl-cN-aBH"/>
+                            <constraint firstItem="fr1-9L-BPS" firstAttribute="top" secondItem="ggD-yC-gH2" secondAttribute="bottom" constant="30" id="nxI-r1-J16"/>
+                            <constraint firstItem="fP5-gm-4t3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qp3-kN-41R"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
